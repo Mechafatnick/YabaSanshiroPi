@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2019 devMiyax(smiyaxdev@gmail.com)
+
+    This file is part of YabaSanshiro.
+
+    YabaSanshiro is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    YabaSanshiro is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with YabaSanshiro; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/game_select_screen">
+        <org.uoyabause.android.GameDirectoriesDialogPreference
+            android:key="pref_game_directory"
+            android:title="@string/select_game_directory"
+            android:summary="" />
+        <Preference
+            android:key="select_image"
+            android:title="@string/select_bk_image" />
+        <CheckBoxPreference
+            android:key="pref_force_androidtv_mode"
+            android:title="@string/foce_android_tv_mode"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_general">
+
+<!--
+        <ListPreference
+            android:key="pref_game_download_directory"
+            android:title="@string/download_to"
+            android:dialogTitle="@string/choose_download_to"
+            android:entries="@array/entries_game_download_directory"
+            android:entryValues="@array/values_game_download_directory"
+            android:defaultValue="0" />
+-->
+
+        <ListPreference
+            android:key="pref_bios"
+            android:title="@string/bios"
+            android:dialogTitle="@string/choose_bios" />
+
+        <ListPreference
+            android:key="pref_cart"
+            android:title="@string/cartridge"
+            android:dialogTitle="@string/choose_cartridge" />
+
+        <CheckBoxPreference
+            android:key="pref_extend_internal_memory"
+            android:title="@string/extend_internal_memory"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="pref_cpu"
+            android:title="@string/cpu_core"
+            android:dialogTitle="@string/choose_cpu_core"
+            android:entries="@array/entries_cpu_list_preference"
+            android:entryValues="@array/entryvalues_cpu_list_preference"
+            android:defaultValue="3" />
+<!--
+        <ListPreference
+            android:key="pref_cpu_sync_per_line"
+            android:title="@string/cpu_sync_per_line"
+            android:dialogTitle="@string/sel_cpu_sync_per_line"
+            android:entries="@array/entries_cpu_sync_per_line"
+            android:entryValues="@array/entryvalues_cpu_sync_per_line"
+            android:defaultValue="0" />
+-->
+	</PreferenceCategory>
+
+
+	<PreferenceCategory android:title="@string/setting_graphics">        
+
+        <ListPreference
+              android:key="pref_video"
+              android:title="@string/video_core"
+              android:dialogTitle="@string/choose_video_core"
+              android:defaultValue="1" />
+ 
+        <CheckBoxPreference
+            android:key="pref_fps"
+            android:title="@string/fps"
+            android:defaultValue="false" />
+        
+        <CheckBoxPreference
+            android:key="pref_frameskip"
+            android:title="@string/frameskip"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="pref_landscape"
+            android:title="@string/lock_landscape"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="pref_rotate_screen"
+            android:title="@string/str_rotate_screen"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="pref_filter"
+            android:title="@string/video_filter"
+            android:dialogTitle="@string/choose_video_filter"
+            android:entries="@array/entries_video_filte_list_preference"
+            android:entryValues="@array/entryvalues_video_filte_list_preference"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="pref_polygon_generation"
+            android:title="@string/polygon_generation_type"
+            android:dialogTitle="@string/choose_polygon_generation_type"
+            android:entries="@array/entries_polygon_generation_type"
+            android:entryValues="@array/entryvalues_polygon_generation_type"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="pref_resolution"
+            android:title="@string/video_resolution"
+            android:dialogTitle="@string/choose_video_resolution"
+            android:entries="@array/entries_video_resolution_list_preference"
+            android:entryValues="@array/entryvalues_video_resolution_list_preference"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="pref_aspect_rate"
+            android:title="@string/video_aspect_ratio"
+            android:dialogTitle="@string/choose_video_aspect_ratio"
+            android:entries="@array/entries_video_aspect_ratio_list_preference"
+            android:entryValues="@array/entryvalues_video_aspect_ratio_list_preference"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="pref_rbg_resolution"
+            android:title="@string/rbg_resolution"
+            android:dialogTitle="@string/choose_rbg_resolution"
+            android:entries="@array/entries_rbg_resolution_list_preference"
+            android:entryValues="@array/entryvalues_rbg_resolution_list_preference"
+            android:defaultValue="0" />
+
+        <CheckBoxPreference
+            android:key="pref_use_compute_shader"
+            android:title="@string/str_use_compute_shader"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="pref_immersive_mode"
+            android:title="@string/hide_status_bar_and_navigation_bar"
+            android:defaultValue="false" />
+
+     </PreferenceCategory>        
+    
+    <PreferenceCategory android:title="@string/input_device_title">
+        <ListPreference
+              android:key="pref_player1_inputdevice"
+              android:title="@string/input_device"
+              android:dialogTitle="@string/choose_input_device"
+              android:defaultValue="65535" />        
+      
+        <org.uoyabause.android.InputSettingPreference
+            android:key="pref_inputdef_file"
+            android:title="@string/input_device_setting"
+            android:summary="" />
+        
+        <PreferenceScreen 
+            android:summary=""
+            android:title="@string/onscrenn_pad_setting"
+            android:key="on_screen_pad">
+        </PreferenceScreen>
+                
+                
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/input_device_title_player2">
+                
+        <ListPreference
+              android:key="pref_player2_inputdevice"
+              android:title="@string/input_device"
+              android:dialogTitle="@string/choose_input_device"
+              android:defaultValue="65535" />        
+      
+        <org.uoyabause.android.InputSettingPreference
+            android:key="pref_player2_inputdef_file"
+            android:title="@string/input_device_setting"
+            android:summary="" />
+                
+    </PreferenceCategory>    
+
+    
+    <PreferenceCategory android:title="@string/setting_sound">
+                <CheckBoxPreference
+            android:key="pref_audio"
+            android:title="@string/audio_output"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="pref_sound_engine"
+            android:title="@string/sound_engine"
+            android:dialogTitle="@string/choose_sound_engine"
+            android:entries="@array/entries_sound_engine_list_preference"
+            android:entryValues="@array/entryvalues_sound_engine_list_preference"
+            android:defaultValue="1" />
+
+        <ListPreference
+            android:key="scsp_time_sync_mode"
+            android:title="@string/time_synchronization_mode"
+            android:dialogTitle="@string/choose_time_synchronization_mode"
+            android:entries="@array/entries_scsp_time_synchronization_mode"
+            android:entryValues="@array/entryvalues_scsp_time_synchronization_mode"
+            android:defaultValue="1" />
+
+        <EditTextPreference
+            android:key="pref_scsp_sync_per_frame"
+            android:inputType="number"
+            android:defaultValue="1"
+            android:summary=""
+            android:title="Scsp synchronization count per a frame(1 - 255)" />
+
+        <ListPreference
+            android:key="scsp_time_sync_mode"
+            android:title="@string/time_synchronization_mode"
+            android:dialogTitle="@string/choose_time_synchronization_mode"
+            android:entries="@array/entries_scsp_time_synchronization_mode"
+            android:entryValues="@array/entryvalues_scsp_time_synchronization_mode"
+            android:defaultValue="1" />
+
+        <EditTextPreference
+            android:key="pref_scsp_sync_per_frame"
+            android:inputType="number"
+            android:defaultValue="1"
+            android:summary=""
+            android:title="@string/scsp_sync" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/information">
+        <PreferenceScreen
+            android:summary="https://www.uoyabause.org/static_pages/privacy_policy.html"
+            android:title="@string/privacy_policy"
+            android:key="on_screen_pad_x">
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

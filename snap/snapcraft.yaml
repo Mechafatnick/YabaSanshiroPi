@@ -1,0 +1,115 @@
+name: yabasanshiro
+base: core18 # the base snap is the execution environment for this snap
+version: '3.0.0' 
+summary: SEGA Saturn emulator
+description: |
+  SEGA Saturn emulator
+
+license: GPL-2.0
+title: Yaba Sanshiro
+icon: snap/local/yabasanshiro.png
+
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
+
+apps:
+  yabasanshiro:
+    command: desktop-launch ${SNAP}/usr/bin/yabasanshiro
+    desktop: usr/share/applications/yabasanshiro.desktop
+    plugs:
+      - home
+      - network
+      - x11
+      - wayland
+      - opengl
+      - pulseaudio
+      - alsa
+      - desktop
+      - desktop-legacy
+      - unity7
+      - dvb
+      - audio-playback
+      - audio-record
+      - removable-media
+      - screen-inhibit-control
+  bash:
+    command: bash
+
+parts:
+  yabasanshiro:
+    source: "https://github.com/devmiyax/yabause.git"
+    source-branch: master
+    source-depth: 1
+    source-type: git
+    plugin: cmake
+    after: [qt5]   
+    configflags:
+      - ${SNAPCRAFT_PART_SRC}/yabause 
+    build-environment:
+      - PYTHONPATH: "/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:$PYTHONPATH"
+    override-pull: |
+      snapcraftctl pull
+      sed -i 's|^Icon=.*|Icon=usr/share/pixmaps/yabasanshiro.png|' ./yabause/src/qt/yabause.desktop.in   
+      git clone https://github.com/firebase/firebase-cpp-sdk.git -b v6.11.0 yabause/src/qt/firebase-cpp-sdk
+      export PYTHONPATH="/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:$PYTHONPATH"
+      pip install wheel
+      pip install absl-py
+      pip install protobuf
+    build-packages:
+      - git 
+      - python-pip 
+      - python-setuptools
+      - python-wheel
+      - python-protobuf
+      - cmake 
+      - build-essential
+      - protobuf-compiler 
+      - libprotobuf-dev 
+      - libsecret-1-dev 
+      - libssl-dev 
+      - zlib1g-dev 
+      - libsdl2-dev 
+      - libboost-all-dev 
+      - qttools5-dev-tools 
+      - libqt5svg5-dev 
+      - qtmultimedia5-dev 
+      - libqt5opengl5-dev 
+      - resolvconf
+    stage-packages:
+      - libsdl2-2.0-0
+      - libboost-all-dev
+      - librdmacm-dev
+      - libpulse0
+      - qtmultimedia5-dev
+      - qtwebengine5-dev
+      - libxcb-xinerama0
+
+
+  qt5:
+      source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
+      source-subdir: qt
+      plugin: make
+      make-parameters: ["FLAVOR=qt5"]
+      build-packages:
+        - qtbase5-dev
+        - qt5-default
+        - dpkg-dev
+      stage-packages:
+        - libxkbcommon0
+        - ttf-ubuntu-font-family
+        - dmz-cursor-theme
+        - light-themes
+        - adwaita-icon-theme
+        - gnome-themes-standard
+        - shared-mime-info
+        - libqt5gui5
+        - libgdk-pixbuf2.0-0
+        - libqt5svg5 # for loading icon themes which are svg
+        - libqt5opengl5
+        - try: [appmenu-qt5] # not available on core18
+        - locales-all
+
+  gnu-bash:
+    source: http://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz
+    plugin: autotools
+    configflags: ["--infodir=/var/bash/info"]        

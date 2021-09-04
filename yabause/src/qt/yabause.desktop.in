@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Yaba Sanshiro (Qt port)
+Comment=Sega Saturn emulator
+Exec=@YAB_PORT_NAME@
+Icon=yabasanshiro
+Terminal=false
+Categories=KDE;Qt;Game;

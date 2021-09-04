@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_exit">終了</string>
+    <string name="menu_save_state">状態保存</string>
+    <string name="menu_load_state">状態読込</string>
+    <string name="load_game">ゲームを選択</string>
+    <string name="setting">設定</string>
+    <string name="choose_bios">BIOSの選択</string>
+    <string name="choose_cartridge">カートリッジの選択</string>
+    <string name="choose_cpu_core">CPUエンジンの選択</string>
+    <string name="choose_video_core">描画エンジンの選択</string>
+    <string name="audio_output">音声出力</string>
+    <string name="fps">FPS表示</string>
+    <string name="frameskip">フレームスキップ</string>
+    <string name="keepaspectrate">オリジナルの画面サイズ</string>
+    <string name="choose_input_device">入力デバイスの選択</string>
+    <string name="input_device_title">入力デバイス1</string>
+    <string name="input_device">選択</string>
+    <string name="input_device_setting">キーマップの編集</string>
+    <string name="onscrenn_pad_setting">オンスクリーンパッドのテスト</string>    
+    <string name="bios">Bios</string>
+    <string name="cartridge">カートリッジ</string>
+    <string name="video_core">描画エンジン</string>      
+    <string name="setting_sound">サウンド</string>
+    <string name="setting_graphics">グラフィックス</string>
+    <string name="setting_general">一般</string>
+    <string name="msg_opengl_not_supported">このデバイスではOpenGL ES 3.0がサポートされていないので、ソフトウェアレンダリングしか選択できません</string>
+    <string name="skip">スキップ</string>
+    <string name="donate_message">
+                  私たちの開発を支援してください！\n\n
+		Yaba Sanshiroの上流プロジェクトYabauseの寄付は http://www.yabause.org/ で承っています。
+		また、下のボタンで直接Yaba Sanshiroに寄付を送ることができます。より正確なエミュレーション,より多くの入力デバイス,より多くのプラットフォームのサポートに役立てます。\n
+        寄付を行うとこの画面と広告画面は表示されなくなります。
+    </string>
+    <string name="thank_you">寄付をありがとうございました!</string>
+    <string name="error_consume">送金に失敗しました。</string>
+    <string name="do_donation">寄付する</string>
+    <string name="no_thank_you">寄付しない</string>
+    <string name="donate_3doller">300円</string>
+    <string name="donate_5doller">500円</string>
+    <string name="donate_10doller">1,000円</string>
+    <string name="donate_30doller">3,000円</string>   	
+    
+    <string name="input_the_key">キーを入力してください</string>
+    <string name="joystick_is_not_connected">ゲームパッドが接続されていません</string>
+    <string name="this_key_has_already_been_set">このキーはすでに設定されています</string>
+	<string name="up">Up</string>
+	<string name="down">Down</string>
+	<string name="left">Left</string>
+	<string name="right">Right</string>
+	<string name="l_trigger">L Triger</string>
+	<string name="r_trigger">R Trigger</string>
+	<string name="start">Start</string>
+	<string name="a_button">A</string>
+	<string name="b_button">B</string>
+	<string name="c_button">C</string>
+	<string name="x_button">X</string>
+	<string name="y_button">Y</string>
+	<string name="z_button">Z</string>
+	
+	<string name="scale">大きさ</string>
+	<string name="do_you_want_to_save_this_setting">この状態で保存しますか？</string>
+	<string name="yes">はい</string>
+	<string name="no">いいえ</string>
+	<string name="exit">終了</string>
+	<string name="ignore">無視</string>
+	
+	<string name="opengl_video_interface">OpenGL描画</string>
+	<string name="software_video_interface">ソフトウェア描画</string>
+	<string name="onscreen_pad">オンスクリーンパッド</string>
+	<string name="select_from_other_directory">他のディレクトリから選択</string>
+    <string name="video_filter">フィルタ</string>
+    <string name="video_filter_fxaa">FXAA</string>
+    <string name="video_filter_none">なし</string>
+    <string name="choose_video_filter">ビデオフィルタの選択</string>
+    <string name="cpu_core">CPUコアの選択</string>
+    <string name="input_device_title_player2">入力デバイス2</string>
+    <string name="invitation_cta">インストール</string>
+    <string name="invitation_message">セガサターンのゲームができるアプリです</string>
+    <string name="invitation_title">このアプリを紹介する</string>
+    <string name="invite">紹介</string>
+    <string name="invite_message">このアプリを紹介しませんか？</string>
+    <string name="transparency">透明度</string>
+    <string name="lock_landscape">横画面 固定</string>
+    <string name="choose_polygon_generation_type">ポリゴン描画方法の選択</string>
+    <string name="choose_sound_engine">サウンドエンジンの選択</string>
+    <string name="choose_video_resolution">描画解像度の選択</string>
+    <string name="donation">サポート</string>
+    <string name="error">エラー</string>
+    <string name="menu_report">レポート</string>
+    <string name="menu_reset">リセット</string>
+    <string name="menu_save_screenshot">スクリーンショット</string>
+    <string name="select_bk_image">背景画像の選択</string>
+    <string name="software_cpu_interface">インタプリタCPU(遅いけど正確)</string>
+    <string name="sound_engine">サウンドエンジン</string>
+    <string name="video_filter_bilinear">バイリニア</string>
+    <string name="video_filter_scanline">スキャンライン</string>
+    <string name="video_resolution">描画解像度</string>
+    <string name="open_cd_tray">CDのふたを開ける</string>
+    <string name="close_cd_tray">CDのふたを閉じる</string>
+    <string name="menu_analog">アナログ有効</string>
+    <string name="menu_cheat">チート</string>
+    <string name="add_new_code">チートコードを追加</string>
+    <string name="delete">削除</string>
+    <string name="disable">無効化</string>
+    <string name="enable">有効化</string>
+    <string name="edit">編集</string>
+    <string name="select_game_directory">ゲームディレクトリの選択</string>
+    <string name="polygon_generation_type">ポリゴン生成方法</string>
+    <string name="new_dynrec_cpu_interface">新ダイナミックリコンパイラ(インタプリタより速く,旧ダイナミックリコンパイラより正確)</string>
+    <string name="dynrec_cpu_interface">旧ダイナミックリコンパイラ(速いけどバグあり)</string>
+    <string name="poly_cpu_tess">CPUテッセレーション</string>
+    <string name="poly_gpu_tess">GPUテッセレーション</string>
+    <string name="res_native">ネイティブ(このデバイスの解像度で描画)</string>
+    <string name="res_original">オリジナル(サターンの解像度)</string>
+    <string name="ar_original">オリジナル(サターンのアスペクト比)</string>
+    <string name="sound_curent">最新(クオリティは高いが遅い)</string>
+    <string name="sound_legacy">旧エンジン(クオリティは低いが速い)</string>
+    <string name="poly_triangle">パースペクティブコレクション</string>
+    <string name="cancel">キャンセル</string>
+    <string name="canceled">キャンセルされました</string>
+    <string name="checking_file">ファイルをチェック中</string>
+    <string name="choose_download_to">ダウンロード先</string>
+    <string name="delete_confirm">削除してよろしいですか？</string>
+    <string name="download_file_is_broken">ダウンロードしたファイルが壊れています</string>
+    <string name="download_to">ダウンロード先</string>
+    <string name="downloading">ダウンロード中</string>
+    <string name="downloading_cd_rom">CD-ROMをダウンロード</string>
+    <string name="external">SDカード</string>
+    <string name="failed">ダウンロード失敗</string>
+    <string name="finished">ダウンロード成功</string>
+    <string name="internal">内部ストレージ</string>
+    <string name="loading">ロード中</string>
+    <string name="menu_delete">削除</string>
+    <string name="menu_load">ロード</string>
+    <string name="network_error">ネットワークエラー</string>
+    <string name="serching_for_a_server">サーバーを探しています</string>
+    <string name="server_error">サーバーでエラー</string>
+    <string name="server_is_not_found">サーバーが見つかりませんでした</string>
+    <string name="unable_to_process_file_for_md5">チェックサムの生成に失敗</string>
+    <string name="you_need_wifi_connection">Wifi接続がありません</string>
+    <string name="waiting_for_reading">読み込み待ち</string>
+    <string name="free_space">空き容量</string>
+    <string name="no_enough_free_space">空き容量が足りません</string>
+    <string name="this_func_not_yet">この機能はまだ実装されていません</string>
+    <string name="memory_manager">保存データー管理</string>
+    <string name="menu_set_as_gametitle">現在の画面をタイトルに設定</string>
+    <string name="refresh_db">ゲームリストの更新</string>
+    <string name="have_donated">私はuoYabauseに寄付しました</string>
+    <string name="send_your_order_id">uoYabauseに寄付したオーダー番号を送ることで、広告を消すことができます。オーダー番号は　http://payments.google.com　で確認できます。</string>
+    <string name="order_number_not_found">オーダー番号が見つかりませんでした</string>
+    <string name="order_number_used">このオーダー番号はすでに使われています</string>
+    <string name="unsahre">共有をやめる</string>
+    <string name="new_version_available">新しい Yaba Sanshiro がリリースされました</string>
+    <string name="share">共有する</string>
+    <string name="extend_internal_memory">内部メモリを8MBに拡張する</string>
+    <string name="send">送信</string>
+    <string name="send_warning">現在のスクリーンショットと状態を送信する\n(送信サイズは約2MByteになります)</string>
+    <string name="status_report">状況報告:</string>
+    <string name="issue_report">問題報告:</string>
+    <string name="report_message_1">ゲームが起動しない</string>
+    <string name="report_message_2">タイトル画面に到達したがゲームができない</string>
+    <string name="report_message_3">ゲームはできるが、画像と音の問題がたくさんある</string>
+    <string name="report_message_4">ゲームはできるが、画像と音の問題が少しある</string>
+    <string name="report_message_5">ほぼ完ぺきに動作する</string>
+    <string name="report_message_6">完ぺきに動作してエンディングに到達した</string>
+    <string name="siginin_message">
+        サインインすることで以下の機能が有効になります\n
+        *セーブデータをクラウドにバックアップする\n
+        *他のユーザーとのチートコードの共有\n\n
+        しかし,これらの機能は実験的なので期待通り動作しなかったり、事前の予告なしに仕様変更されたり、終了したりすることがあります。
+    </string>
+    <string name="agree">同意します</string>
+    <string name="do_you_want_to_sign_in">ログインしますか？</string>
+    <string name="never_ask_me_again">二度と聞かないでください</string>
+    <string name="sign_in">ログイン</string>
+    <string name="sign_in_cancelled">ログインがキャンセルされました</string>
+    <string name="sign_out">ログアウト</string>
+    <string name="stop">停止</string>
+    <string name="sure_delete">本当に削除してよろしいですか？</string>
+    <string name="accept">了承</string>
+    <string name="activate">有効化</string>
+    <string name="copy_to_cloud">クラウドにコピー</string>
+    <string name="copy_to_external">外部メモリにコピー</string>
+    <string name="copy_to_internal">内部メモリにコピー</string>
+    <string name="decline">拒否</string>
+    <string name="deleting_file">ファイルを削除します</string>
+    <string name="dismiss_error">拒否</string>
+    <string name="no_internet_connection">インターネットに接続していません</string>
+    <string name="ok">OK</string>
+    <string name="oops">しまった！</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="rate">評価</string>
+    <string name="str_rotate_screen">90度回転させる</string>
+    <string name="game_select_screen">ゲーム選択画面</string>
+    <string name="foce_android_tv_mode">強制的にAndroidTV モード</string>
+    <string name="are_you_sure_to_delete">本当に消してよいですか？</string>
+    <string name="unknown_error">原因不明の問題</string>
+    <string name="unknown_sign_in_response">謎の応答</string>
+    <string name="scsp_sync">1フレーム毎にSCSPと同期する回数</string>
+    <string name="need_to_accept">メディアファイルへのアクセスをを許可しないとこのアプリは使用できません。再起動して許可してください。どうやってISOイメージを読むつもりでした? wwwwwwww</string>
+    <string name="cpu_sync_per_line">エミュレーションの優先事項</string>
+    <string name="sel_cpu_sync_per_line"></string>
+    <string name="speed">スピード</string>
+    <string name="accuracy">正確さ</string>
+
+    <string name="time_synchronization_mode">サウンド同期モード</string>
+    <string name="choose_time_synchronization_mode">サウンド同期モード</string>
+    <string name="cpu_time">CPU time (仮想CPUの時間に同期します。あなたのデバイスが十分早い場合、正確なサウンドが得られます。)</string>
+    <string name="real_time">Real time (実世界の時間に同期します。あなたのデバイスが遅くても、音が途切れることはありません。)</string>
+    <string name="already_have_been">" すでに寄付されている場合は、smiyaxdev@gmail.comまでご連絡ください"</string>
+    <string name="close">閉じる</string>
+    <string name="video_aspect_ratio">画面縦横比</string>
+    <string name="rbg_resolution">回転スクロール面の解像度</string>
+    <string name="str_use_compute_shader">回転スクロール面の描画にComputeShaderを使用する</string>
+    <string name="res_full_screen">フルスクリーン</string>
+    <string name="about_app">このアプリについて</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="preferences">設定</string>
+    <string name="popular_header">人気のビデオ</string>
+    <string name="play_pause_description">再生・停止ボタン</string>
+    <string name="related_movies">関連ビデオ</string>
+    <string name="res_1080p">1080p</string>
+    <string name="res_16p9">16:9</string>
+    <string name="res_2x">2x</string>
+    <string name="res_4p3">4:3</string>
+    <string name="res_4x">4x</string>
+    <string name="res_720p">720p</string>
+    <string name="version">Version: %1$s</string>
+    <string name="show_fps">FPSを表示する</string>
+    <string name="enable_frame_skip">フレームスキップを有効にする</string>
+    <string name="choose_rbg_resolution">回転スクロール面の解像度</string>
+    <string name="choose_video_aspect_ratio">アスペクト比の選択</string>
+    <string name="welcome">
+        <![CDATA[
+        # ようこそ! \n\n
+
+       以下の手順でセガサターンのゲームを実行します。\n\n
+
+        1. CD Manipulatorなどを使ってCD-ROMのイメージ作成します。そのほかのイメージ作成ツールは[ここ](http://wiki.redump.org/index.php?title=Useful_Links)にあります。\n
+        2. 作成されたCD-ROMイメージをスマホの **\"%1$s\"** にコピーします。 \n
+        3. 画面左端をスワイプしてドローワーメニューを表示して \"ゲームリストの更新\" をタップします。ゲーム一覧が更新されます。\n
+        4. 一覧をタップするとゲームが始まります。\n
+        5. 遊ぶ!\n
+        \n
+        より詳しい使い方は私たちの[サイト](https://www.uoyabause.org/static_pages/guide)を見てください。\n
+        ]]>
+    </string>
+    <string name="delete_confirm_title">削除確認</string>
+    <string name="not_available">利用できません!</string>
+    <string name="only_pro_version">この機能はPro versionのみ使用できます</string>
+    <string name="got_it">了解!</string>
+    <string name="menu_save_state_cloud">状態をクラウドに保存</string>
+    <string name="menu_load_state_cloud">クラウドから状態を復帰</string>
+    <string name="hide_status_bar_and_navigation_bar">ステータスバーとナビゲーションバーを隠す</string>
+    <string name="sign_in_to_other_devices">ほかのデバイスにログインする</string>
+
+</resources>

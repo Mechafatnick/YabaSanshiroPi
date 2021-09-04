@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2019 devMiyax(smiyaxdev@gmail.com)
+
+    This file is part of YabaSanshiro.
+
+    YabaSanshiro is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    YabaSanshiro is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with YabaSanshiro; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+-->
+<resources>
+    <string name="basic_user" translatable="false" >jfonvwe</string>
+    <string name="basic_password" translatable="false" >in23408vnwer</string>
+    <string name="ad_app_id" translatable="false" >ca-app-pub-1</string>
+    <string name="banner_ad_unit_id" translatable="false" >ca-app-pub-2</string>
+    <string name="banner_ad_unit_id2" translatable="false" >ca-app-pub-3</string>
+    <string name="global_tracker" translatable="false" >UA-9999999-1</string>
+    <string name="donation_publickey" translatable="false">ddddd</string>
+    <string name="donation_payload" translatable="false">ddddd</string>
+    <string name="check_order_url" translatable="false">https://www.uoyabause.org/</string>
+    <string name="host" translatable="false">dq344</string>
+    <string name="schema" translatable="false">fkweorijc</string>
+    <string name="nend_spoid" translatable="false">000000</string>
+    <string name="nend_apikey" translatable="false">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</string>
+
+    <string name="key_getLoginPinIn" translatable="false" >pass</string>
+    <string name="key_getTokenAndDelete" translatable="false" >pass</string>
+    <string name="url_getLoginPinIn" translatable="false" >"https://localhost:3000/getLoginPinIn"</string>
+    <string name="url_getTokenAndDelete" translatable="false" >"https://localhost:3000/getTokenAndDelete"</string>
+
+    <!--
+    <string name="check_order_url" translatable="false">http://192.168.0.8:3000</string>
+    -->
+</resources>
